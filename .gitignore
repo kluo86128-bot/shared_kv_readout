@@ -1,0 +1,20 @@
+# 默认忽略所有文件，只放行下列源码。
+# 数据集、模型权重、断点、测试结果、日志、缓存和本地配置都不纳入 Git。
+*
+!/.gitignore
+
+!/kv_cache_readout/
+!/kv_cache_readout/*.py
+!/e2e_cache/
+!/e2e_cache/*.py
+!/e2e_workload/
+!/e2e_workload/*.py
+!/runtime_fixes/
+!/runtime_fixes/*.py
+!/scripts/
+!/scripts/*.py
+!/tests/
+!/tests/*.py
+
+# 此脚本含现有服务器的绝对路径，单独保留在本地。
+/scripts/build_hr_v4_c128.py
